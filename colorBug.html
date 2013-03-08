@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>Color space reproduction test case</title>
+    <style>
+ 
+    
+    #spinner {
+    	width: 20px;
+    	height: 20px;
+    	-webkit-animation: spinner 1s infinite linear;
+    }    
+    
+    @-webkit-keyframes spinner {
+      0% {
+        -webkit-transform: rotate(0deg);
+      }
+      100% {
+        -webkit-transform: rotate(360deg);
+      }
+    }
+
+    #text1, #text2 {
+        color: #0083e8;
+    }
+    
+    #text1 {
+        position: relative;
+    }
+    </style>
+    
+</head>
+<body>
+    <div id="spinner">.</div>
+    <div id="text1">This text should have the same color as the text below</div>
+    <div id="text2">This text should have the same color as the text above</div>
+</body>
+</html>
