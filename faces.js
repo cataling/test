@@ -25,19 +25,23 @@ var FacesApp = function() {
         thankYouNode.classList.add("hidden");
     }
     
+    function trackEvent(action) {
+        pageTracker._trackEvent("Faces", action);
+    }
+    
     function happyClicked() {
         sayThankYou();
-        pageTracker._trackEvent("Faces", "happy");
+        trackEvent("happy");
     }
     
     function neutralClicked() {
         sayThankYou();
-        pageTracker._trackEvent("Faces", "neutral");        
+        trackEvent("neutral");
     }
 
     function sadClicked() {
         sayThankYou();
-        pageTracker._trackEvent("Faces", "sad");        
+        trackEvent("sad");
     }
     
     return {
