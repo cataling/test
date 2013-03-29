@@ -27,14 +27,17 @@ var FacesApp = function() {
     
     function happyClicked() {
         sayThankYou();
+        pageTracker._trackEvent("Faces", "happy");
     }
     
     function neutralClicked() {
         sayThankYou();
+        pageTracker._trackEvent("Faces", "neutral");        
     }
 
     function sadClicked() {
         sayThankYou();
+        pageTracker._trackEvent("Faces", "sad");        
     }
     
     return {
